@@ -31,11 +31,7 @@ public class GifController {
             return "favorites";
         }
 
-        @GetMapping("/categories")
-        public String openCategories(){
 
-            return "categories";
-        }
 
         @GetMapping("/category")
         public String openCategory(){

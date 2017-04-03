@@ -10,8 +10,14 @@ public class Gif {
     private String name;
    private String surname;
    private boolean favorite;
-   private List<String > categories=new LinkedList<>();
+   private int categoryId;
 
+    public Gif(String name, String surname, boolean favorite, int categoryId) {
+        this.name = name;
+        this.surname = surname;
+        this.favorite = favorite;
+        this.categoryId = categoryId;
+    }
 
     public Gif(String name, String surname, boolean favorite) {
         this.name = name;
@@ -40,6 +46,14 @@ public class Gif {
 
     public boolean isFavorite() {
         return favorite;
+    }
+
+    public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 
     public void setFavorite(boolean favorite) {
