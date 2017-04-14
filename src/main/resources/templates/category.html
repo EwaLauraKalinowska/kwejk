@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edqe">
     <title>Kwejk</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 <body>
@@ -60,7 +60,7 @@
         <div class="gif-home container">
         <div class="row">
 
-            <div th:each="gif : ${gifs}" class="col-md-l6">
+            <div th:each="gif : ${gifs}" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                 <a th:href="@{'/gif/' + ${gif.name}}">
 
